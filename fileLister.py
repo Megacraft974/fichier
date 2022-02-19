@@ -17,13 +17,14 @@ def parseName(f):
     return f
 
 if __name__ == "__main__":
+    # Was used to keep track of the downloaded torrents, see the animeManager project for updated version
     from os import listdir
     #from os.path import isfile, join
     from animeManager import Manager
     # m = Manager(remote=True)
     # m.regroupFiles()
 
-    path = "D:/Animes/"
+    path = "E:/Animes/"
     files = []
     ignoreList = ["+++.txt","AutoNameList.txt","Torrents"]
     for f in listdir(path):

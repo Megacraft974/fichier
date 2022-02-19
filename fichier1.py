@@ -37,11 +37,12 @@ def lire_fichier(nom_du_fichier):
 
 
 def enumere(texte):
+    # Aucune idee de ce que c'est censé faire
     chiffre = 0
     while chiffre < 100:
         espaces = 1#""
         for lettre in texte:
-            ecrire_fichier(espaces + lettre + "\n","test.txt")
+            ecrire_fichier(str(espaces) + lettre + "\n","test.txt")
             espaces = espaces + 1#" "
             chiffre = chiffre + 1
     print(espaces)

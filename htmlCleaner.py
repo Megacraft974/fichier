@@ -16,9 +16,9 @@ def cleanhtml(raw_html):
   cleantext = re.sub(cleanr, '', raw_html)
   return cleantext
 
-text = input("-> ")
+text = getClip()
 if text == "":
-    text = getClip()
+    text = input("-> ")
 text = cleanhtml(text)
 copy2clip(text)
 
